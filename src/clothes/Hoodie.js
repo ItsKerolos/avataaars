@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { uniqueId } from '../..';
+import { uniqueId } from '..';
 
 class Hoodie extends React.Component
 {

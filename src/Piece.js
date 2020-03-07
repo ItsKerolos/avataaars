@@ -13,7 +13,7 @@ import Top from './top';
 import FacialHair from './top/facialHair';
 import Accessories from './top/accessories';
 
-import Clothe from './top/clothes';
+import Clothe from './clothes';
 
 import Skin from './Skin.js';
 
