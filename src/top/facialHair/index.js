@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { View } from 'react-native';
-
 import PropTypes from 'prop-types';
 
 import BeardMajestic from './BeardMajestic.js';
@@ -21,8 +19,10 @@ class FacialHair extends React.Component
       'red': '#C93305'
     };
 
+    const color = colors[this.props.facialHairColor || 'brown-dark'];
+
     if (this.props.facialHairType === 'beard-majestic')
-      return <BeardMajestic color={ colors[this.props.facialHairColor] }/>;
+      return <BeardMajestic color={ color }/>;
     else
       return <g/>;
   }

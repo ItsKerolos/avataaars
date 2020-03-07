@@ -28,9 +28,9 @@ class Top extends React.Component
     if (this.props.topType === 'long-hair-fro')
       return <LongHairFro color={ color }/>;
     else if (this.props.topType === 'long-hair-frida')
-      return <LongHairFrida color={ colors[this.props.topColor] }/>;
+      return <LongHairFrida color={ color }/>;
     else
-      return <LongHairStraight color={ colors[this.props.topColor] }/>;
+      return <LongHairStraight color={ color }/>;
   }
 }
 

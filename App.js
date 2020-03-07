@@ -17,6 +17,7 @@ export default function App()
       backgroundColor: 'red'
     } }>
 
+      {/* default with background circle */}
       <View style={ {
         overflow: 'hidden',
         backgroundColor: '#65C9FF',
@@ -26,10 +27,10 @@ export default function App()
           avatarSize='264'
           accessoriesType='prescription'
           facialHairType='beard-majestic'
-          facialHairColor='red'
         />
       </View>
 
+      {/* the original 3/4 background circle */}
       <View style={ {
         overflow: 'hidden',
         margin: 20,
@@ -57,6 +58,7 @@ export default function App()
         </View>
       </View>
 
+      {/* Normal Full Avatar */}
       <Avatar
         avatarSize='264'
         skinColor='brown'
