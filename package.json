@@ -1,39 +1,36 @@
 {
-  "name": "avataaars",
-  "version": "1.2.1",
-  "description": "React component for avataaars ",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "keywords": [
-    "react",
-    "avatar"
-  ],
-  "repository": "git@github.com:fangpenlin/avataaars.git",
-  "author": "Fang-Pen Lin <hello@fangpenlin.com>",
+  "name": "react-native-avataaars",
+  "version": "0.1.0",
+  "description": "Use avataaars in any React Native Project",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsKerolos/avataaars.git"
+  },
+  "author": "Kerolos Zaki",
   "license": "MIT",
-  "peerDependencies": {
-    "react": "^16.0.0"
+  "bugs": {
+    "url": "https://github.com/ItsKerolos/avataaars/issues"
+  },
+  "homepage": "https://github.com/ItsKerolos/avataaars#readme",
+  "dependencies": {
+    "react-native-svg": "^9.13.3"
   },
   "devDependencies": {
-    "@types/react": "^16.0.25",
-    "import-sort-style-renke": "^4.2.0",
-    "tslint": "^5.8.0",
-    "tslint-config-standard": "^7.0.0",
-    "tslint-react": "^3.2.0",
-    "typescript": "^2.6.2"
-  },
-  "dependencies": {
-    "lodash": ">=4.17.11",
-    "prop-types": "^15.6.0"
-  },
-  "importSort": {
-    ".js, .jsx, .es6, .es": {
-      "parser": "babylon",
-      "style": "import-sort-style-renke"
-    },
-    ".ts, .tsx": {
-      "parser": "typescript",
-      "style": "import-sort-style-renke"
-    }
+    "@babel/core": "^7.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-expo": "~8.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "expo": "~36.0.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-web": "~0.11.7"
   }
 }

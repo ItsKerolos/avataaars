@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "avataaars",
+    "slug": "avataaars",
+    "privacy": "unlisted",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
