@@ -1,19 +1,19 @@
-# Use avataaars in any React Native Project"
+# Use avataaars in any React Native Project
 
-Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on the Sketch library [Avataaars](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 
+Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 
 
-<p align="center"><img src='avataaars-example.png?raw=true' style='width: 300px; height: 300px;' /></p>
+<!-- <p align="center"><img src='avataaars-example.png?raw=true' style='width: 128px; height: 128px;' /></p> -->
 
-## Features
+<!-- ## Features
 
  - SVG based
  - Lightweight 
  - Scalable
  - Easy to use
  - Easy to integrate with custom editor
- - Comes with [official editor](https://getavataaars.com/)
+ - Comes with [official editor](https://getavataaars.com/) -->
 
-# This project is still work in progress and not useable yet
+## This project is still work in progress and not useable yet
 
 <!-- ## Usage
 
