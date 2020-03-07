@@ -70,7 +70,7 @@ export default function App()
       />
 
       {/*
-      <Piece pieceType='skin' pieceSize='100' skinColor='brown' />
+      <Piece pieceType='body' pieceSize='100' skinColor='black'/>
 
       <Piece pieceType='eyebrows' pieceSize='100' eyebrowType='default'/>
 
@@ -92,7 +92,7 @@ export default function App()
 
       {/* ----- */}
 
-      {/* <Piece pieceType='skin' pieceSize='100' />
+      {/*  <Piece pieceType='body' pieceSize='100'/>
 
         <Piece pieceType='eyebrows' pieceSize='100'/>
 

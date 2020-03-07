@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import Svg from 'react-native-svg';
 
+import Body from './body';
+
 import Eyebrows from './face/eyebrows';
 import Eyes from './face/eyes';
 import Mouth from './face/mouth';
@@ -15,7 +17,6 @@ import Accessories from './top/accessories';
 
 import Clothe from './clothes';
 
-import Skin from './Skin.js';
 import Graphics from './clothes/graphics';
 
 class Piece extends React.Component
@@ -28,11 +29,13 @@ class Piece extends React.Component
         height={ this.props.pieceSize || '100' }
         viewBox={ this.props.viewBox || '0 0 264 280' }
       >
+        { (this.props.pieceType === 'body') ? <Body { ...this.props } maskID='1234'/> : undefined }
+
         { (this.props.pieceType === 'top') ? <Top { ...this.props }/> : undefined }
         
         { (this.props.pieceType === 'clothe') ? <Clothe { ...this.props }/> : undefined }
 
-        { this.props.pieceType === 'graphics' && <Graphics { ...this.props } maskID='1234'/> }
+        { this.props.pieceType === 'graphics' && <Graphics { ...this.props } maskID='5678'/> }
 
         { (this.props.pieceType === 'accessories') ? <Accessories { ...this.props }/> : undefined }
 
@@ -45,8 +48,6 @@ class Piece extends React.Component
         { (this.props.pieceType === 'eyes') ? <Eyes { ...this.props }/> : undefined }
         
         { (this.props.pieceType === 'eyebrows') ? <Eyebrows { ...this.props }/> : undefined }
-
-        { (this.props.pieceType === 'skin') ? <Skin maskID='5678' { ...this.props }/> : undefined }
       </Svg>
     );
   }

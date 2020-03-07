@@ -2,7 +2,9 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-class Skin extends React.Component
+import Default from './Default.js';
+
+class Body extends React.Component
 {
   render()
   {
@@ -18,22 +20,13 @@ class Skin extends React.Component
 
     const color = colors[this.props.skinColor || 'light'];
     
-    return (
-      <g
-        id='Skin/👶🏽-03-Brown'
-        mask={ `url(#${this.props.maskID})` }
-        fill={ color }>
-        <g transform='translate(0.000000, 0.000000)' id='Color'>
-          <rect x='0' y='0' width='264' height='280' />
-        </g>
-      </g>
-    );
+    return <Default { ...this.props } color={ color }/>;
   }
 }
 
-Skin.propTypes = {
-  maskID: PropTypes.string,
+Body.propTypes = {
+  bodyType: PropTypes.string,
   skinColor: PropTypes.string
 };
 
-export default Skin;
+export default Body;
