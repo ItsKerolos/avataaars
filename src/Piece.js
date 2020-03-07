@@ -23,8 +23,8 @@ class Piece extends React.Component
   {
     return (
       <Svg
-        width={ this.props.pieceSize }
-        height={ this.props.pieceSize }
+        width={ this.props.pieceSize || '100' }
+        height={ this.props.pieceSize || '100' }
         viewBox={ this.props.viewBox || '0 0 264 280' }
       >
         { (this.props.pieceType === 'top') ? <Top { ...this.props }/> : undefined }
@@ -52,7 +52,7 @@ class Piece extends React.Component
 }
 
 Piece.propTypes = {
-  pieceSize: PropTypes.string.isRequired,
+  pieceSize: PropTypes.string,
   pieceType: PropTypes.string.isRequired,
   viewBox: PropTypes.string
 };

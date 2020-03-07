@@ -11,18 +11,54 @@ export default function App()
   return (
     <View style={ {
       flex: 1,
+      flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: 'red'
     } }>
 
-      {/* <Avatar
-        accessoriesType='prescription'
-        facialHairType='beard-majestic'
-        facialHairColor='red'
-      /> */}
-      
+      <View style={ {
+        overflow: 'hidden',
+        backgroundColor: '#65C9FF',
+        borderRadius: 264
+      } }>
+        <Avatar
+          avatarSize='264'
+          accessoriesType='prescription'
+          facialHairType='beard-majestic'
+          facialHairColor='red'
+        />
+      </View>
+
+      <View style={ {
+        overflow: 'hidden',
+        margin: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 264
+      } }>
+        <View style={ {
+          position: 'absolute',
+          width: 235,
+          height: 235,
+          bottom: -10,
+          borderRadius: 235,
+          backgroundColor: '#65C9FF'
+        } }/>
+
+        <View>
+          <Avatar
+            avatarSize='264'
+            skinColor='brown'
+            eyeType='wink'
+            mouthType='smile'
+            topType='long-hair-frida'
+          />
+        </View>
+      </View>
+
       <Avatar
+        avatarSize='264'
         skinColor='brown'
         eyeType='wink'
         mouthType='smile'
