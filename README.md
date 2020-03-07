@@ -2,7 +2,7 @@
 ### Use Avatars in any React Native project
 
 <p align="center">
-  <img src='avataaars-example.png' style='width: 128px; height: 128px;'/>
+  <img src='avataaars-example.png' style='width: 128px; height: 136px;'/>
 </p>
 
 Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 

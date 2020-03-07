@@ -1,7 +1,3 @@
-☐ port the hats component
-
-☐ port the graphics component
-
 ☐ allow all colors and move the colors sets to an export enum
   - use a default color
 

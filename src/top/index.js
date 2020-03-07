@@ -6,6 +6,8 @@ import LongHairFro from './LongHairFro.js';
 import LongHairFrida from './LongHairFrida.js';
 import LongHairStraight from './LongHairStraight.js';
 
+import Hijab from './Hijab.js';
+
 class Top extends React.Component
 {
   render()
@@ -29,6 +31,8 @@ class Top extends React.Component
       return <LongHairFro color={ color }/>;
     else if (this.props.topType === 'long-hair-frida')
       return <LongHairFrida color={ color }/>;
+    else if (this.props.topType === 'hijab')
+      return <Hijab color={ color }/>;
     else
       return <LongHairStraight color={ color }/>;
   }

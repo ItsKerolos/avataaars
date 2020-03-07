@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import Hoodie from './Hoodie.js';
 import ShirtCrewNeck from './ShirtCrewNeck.js';
+import GraphicShirt from './GraphicShirt.js';
 
 class Clothe extends React.Component
 {
@@ -31,6 +32,8 @@ class Clothe extends React.Component
 
     if (this.props.clotheType === 'hoodie')
       return <Hoodie color={ color }/>;
+    else if (this.props.clotheType === 'graphic')
+      return <GraphicShirt { ...this.props } color={ color }/>;
     else
       return <ShirtCrewNeck color={ color }/>;
   }
@@ -38,7 +41,8 @@ class Clothe extends React.Component
 
 Clothe.propTypes = {
   clotheType: PropTypes.string,
-  clotheColor: PropTypes.string
+  clotheColor: PropTypes.string,
+  clotheGraphic: PropTypes.string
 };
 
 export default Clothe;

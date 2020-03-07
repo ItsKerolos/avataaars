@@ -16,6 +16,7 @@ import Accessories from './top/accessories';
 import Clothe from './clothes';
 
 import Skin from './Skin.js';
+import Graphics from './clothes/graphics';
 
 class Piece extends React.Component
 {
@@ -31,7 +32,7 @@ class Piece extends React.Component
         
         { (this.props.pieceType === 'clothe') ? <Clothe { ...this.props }/> : undefined }
 
-        {/* { this.props.pieceType === 'graphics' && <Graphics maskID="1234"/> } */}
+        { this.props.pieceType === 'graphics' && <Graphics { ...this.props } maskID='1234'/> }
 
         { (this.props.pieceType === 'accessories') ? <Accessories { ...this.props }/> : undefined }
 
