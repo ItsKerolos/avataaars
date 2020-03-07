@@ -1,17 +1,23 @@
 # React Native Avataaars
-### Use Avatars in any React Native project
 
-<p align="center">
-  <img src='avataaars-example.png' style='width: 128px; height: 136px;'/>
-</p>
+<img src='avataaars-example.png' style='width: 128px; height: 136px;'/>
 
 Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 
 
-Online Editor by [Fang-Pen Lin](https://twitter.com/fangpenlin) --- [https://getavataaars.com](https://getavataaars.com/)
+However, This project is not compatible with the React library or [https://getavataaars.com](https://getavataaars.com/).
 
 ## Usage
 
 #### This project is still work in progress and not useable yet
+
+## Demo
+
+```
+git clone https://github.com/ItsKerolos/react-native-avataaars
+cd react-native-avataaars
+npm install
+npm run web
+```
 
 <!-- ## Usage
 

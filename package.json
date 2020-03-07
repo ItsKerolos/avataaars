@@ -1,7 +1,7 @@
 {
   "name": "react-native-avatars",
   "version": "0.1.0",
-  "description": "Use avatars in any React Native Project",
+  "description": "Use Avataaars in any React Native Project",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ItsKerolos/avataaars.git"
+    "url": "git+https://github.com/ItsKerolos/react-native-avataaars.git"
   },
   "author": "Kerolos Zaki",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ItsKerolos/avataaars/issues"
+    "url": "https://github.com/ItsKerolos/react-native-avataaars/issues"
   },
-  "homepage": "https://github.com/ItsKerolos/avataaars#readme",
+  "homepage": "https://github.com/ItsKerolos/react-native-avataaars#readme",
   "dependencies": {
     "react-native-svg": "^9.13.3"
   },
