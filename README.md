@@ -1,35 +1,23 @@
-# Use avataaars in any React Native Project
+# React Native Avataaars
+### Use Avatars in any React Native project
+
+<p align="center">
+  <img src='avataaars-example.png' style='width: 128px; height: 128px;'/>
+</p>
 
 Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 
 
-<!-- <p align="center"><img src='avataaars-example.png?raw=true' style='width: 128px; height: 128px;' /></p> -->
+Online Editor by [Fang-Pen Lin](https://twitter.com/fangpenlin) --- [https://getavataaars.com](https://getavataaars.com/)
 
-<!-- ## Features
+## Usage
 
- - SVG based
- - Lightweight 
- - Scalable
- - Easy to use
- - Easy to integrate with custom editor
- - Comes with [official editor](https://getavataaars.com/) -->
-
-## This project is still work in progress and not useable yet
+#### This project is still work in progress and not useable yet
 
 <!-- ## Usage
 
-First, you need to install the avataaars component package, here you run
-
 ```
-yarn add avataaars
+npm install react-native-avatars --save
 ```
-
-or
-
-```
-npm install avataaars --save
-```
-
-if you are using npm. Then, in your React app, import the Avataaar component and put it where you like it to be, for example -->
 
 <!-- ```jsx
 import * as React from 'react'
@@ -82,9 +70,3 @@ export default class MyComponent extends React.Component {
   }
 }
 ```
-
-To explore avatar options and generate the React code, please use [Avataaars Generator](https://getavataaars.com/)
-
-## Collect options
-
-To build your own avatar editor, you may want to use lower level `Avatar` component along with `OptionContext`. For more details usage, please reference to source code of [avataaars-generator](https://github.com/fangpenlin/avataaars-geneator), see how it uses `OptionContext` to collection available options. -->

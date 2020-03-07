@@ -1,7 +1,7 @@
 {
-  "name": "react-native-avataaars",
+  "name": "react-native-avatars",
   "version": "0.1.0",
-  "description": "Use avataaars in any React Native Project",
+  "description": "Use avatars in any React Native Project",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",

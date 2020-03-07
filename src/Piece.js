@@ -23,7 +23,6 @@ class Piece extends React.Component
   {
     return (
       <Svg
-        // style={ this.props.style }
         width={ this.props.pieceSize }
         height={ this.props.pieceSize }
         viewBox={ this.props.viewBox || '0 0 264 280' }
@@ -55,7 +54,6 @@ class Piece extends React.Component
 Piece.propTypes = {
   pieceSize: PropTypes.string.isRequired,
   pieceType: PropTypes.string.isRequired,
-  // style: PropTypes.object,
   viewBox: PropTypes.string
 };
 

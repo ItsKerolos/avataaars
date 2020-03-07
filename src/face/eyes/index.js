@@ -6,7 +6,7 @@ import Dizzy from './Dizzy.js';
 import Wink from './Wink.js';
 import Default from './Default.js';
 
-class Eyebrow extends React.Component
+class Eyes extends React.Component
 {
   render()
   {
@@ -19,8 +19,8 @@ class Eyebrow extends React.Component
   }
 }
 
-Eyebrow.propTypes = {
+Eyes.propTypes = {
   eyeType: PropTypes.string
 };
 
-export default Eyebrow;
+export default Eyes;
