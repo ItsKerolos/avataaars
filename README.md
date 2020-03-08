@@ -1,8 +1,14 @@
-# Avataaars as a API
-
 <img src='avataaars-example.png' style='width: 128px; height: 136px;'/>
 
-Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 
+Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley).
+
+This is a rewrite of Fang-Pen Lin's work but as a API, this allow it to be used for things like: 
+  - Serverless function.
+  - Generating an avatar from your terminal.
+  - Use it inside any Web framework.
+
+Being a rewrite we removed, added and renamed stuff so this is not compatible with things like [https://getavataaars.com/](https://getavataaars.com/)
+
 ## Usage
 
 #### This project is still work in progress and not useable yet
