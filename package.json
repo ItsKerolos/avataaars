@@ -1,36 +1,45 @@
 {
-  "name": "react-native-avatars",
+  "name": "avataaars",
   "version": "0.1.0",
-  "description": "Use Avataaars in any React Native Project",
-  "main": "node_modules/expo/AppEntry.js",
+  "description": "Avataaars as a API",
+  "main": "build/index.js",
   "scripts": {
-    "start": "expo start",
-    "web": "expo start --web"
+    "start": "babel -d ./build src -s --watch",
+    "build": "rm -rf ./build && mkdir ./build && babel -d ./build ./src",
+    "test": "jest",
+    "test:coverage": "jest --collect-coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ItsKerolos/react-native-avataaars.git"
+    "url": "git+https://github.com/ItsKerolos/avataaars.git"
   },
   "author": "Kerolos Zaki",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ItsKerolos/react-native-avataaars/issues"
+    "url": "https://github.com/ItsKerolos/avataaars/issues"
   },
-  "homepage": "https://github.com/ItsKerolos/react-native-avataaars#readme",
-  "dependencies": {
-    "react-native-svg": "^9.13.3"
+  "homepage": "https://github.com/ItsKerolos/avataaars#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@types/jest": "^25.1.4",
     "babel-eslint": "^10.1.0",
-    "babel-preset-expo": "~8.0.0",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-native": "^3.8.1",
-    "expo": "~36.0.0",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-web": "~0.11.7"
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^25.1.0",
+    "jest-extended": "^0.11.5"
   }
 }

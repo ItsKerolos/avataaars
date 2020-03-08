@@ -5,7 +5,9 @@ import React from 'react';
 
 import { View } from 'react-native';
 
-import Avatar from './src';
+import Piece from './Piece';
+
+// import Avatar from './src';
 
 export default function App()
 {
@@ -19,7 +21,7 @@ export default function App()
     } }>
 
       {/* default with background circle */}
-      <View style={ {
+      {/* <View style={ {
         overflow: 'hidden',
         backgroundColor: '#65C9FF',
         borderRadius: 264
@@ -29,10 +31,10 @@ export default function App()
           accessoriesType='prescription'
           facialHairType='beard-majestic'
         />
-      </View>
+      </View> */}
 
       {/* the original 3/4 background circle */}
-      <View style={ {
+      {/* <View style={ {
         overflow: 'hidden',
         margin: 20,
         alignItems: 'center',
@@ -57,20 +59,21 @@ export default function App()
             topType='hijab'
           />
         </View>
-      </View>
+      </View> */}
 
       {/* Normal Full Avatar */}
-      <Avatar
+      {/* <Avatar
         avatarSize='264'
         skinColor='brown'
         eyeType='wink'
         mouthType='smile'
         topType='long-hair-frida'
         clotheType='graphic'
-      />
+      /> */}
+
+      <Piece pieceType='body' pieceSize='100' skinColor='black'/>
 
       {/*
-      <Piece pieceType='body' pieceSize='100' skinColor='black'/>
 
       <Piece pieceType='eyebrows' pieceSize='100' eyebrowType='default'/>
 

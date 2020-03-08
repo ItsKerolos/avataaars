@@ -2,22 +2,17 @@
   "env": {
     "node": true,
     "es6": true,
-    "react-native/react-native": true
-  },
-    "parserOptions": {
-    "ecmaVersion": 6,
-    "allowImportExportEverywhere": false,
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "jest/globals": true
   },
   "plugins": [
-    "react",
-    "react-native"
+    "jest",
+    "security"
   ],
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:jest/style",
+    "plugin:jest/recommended",
+    "plugin:security/recommended"
   ],
   "parser": "babel-eslint",
   "rules": {
@@ -51,17 +46,6 @@
     "func-call-spacing": ["error", "never"],
     "key-spacing": ["error", { "afterColon": true }],
     "keyword-spacing": ["error", { "before": true, "after": true }],
-    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
-
-    "react/display-name": [ 0 ],
-    "react/jsx-curly-spacing": [ 2, "always" ],
-    "jsx-quotes": ["error", "prefer-single"],
-
-    "react-native/no-unused-styles": 2,
-    "react-native/split-platform-components": 2,
-    "react-native/no-inline-styles": 2,
-    "react-native/no-color-literals": 2,
-    "react-native/no-raw-text": 2,
-    "react-native/no-single-element-style-arrays": 2
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }]
   }
 }

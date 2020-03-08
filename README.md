@@ -1,23 +1,20 @@
-# React Native Avataaars
+# Avataaars as a API
 
 <img src='avataaars-example.png' style='width: 128px; height: 136px;'/>
 
 Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangpenlin), based on a [Sketch library](https://avataaars.com/) designed by [Pablo Stanley](https://twitter.com/pablostanley). 
-
-However, This project is not compatible with the React library or [https://getavataaars.com](https://getavataaars.com/).
-
 ## Usage
 
 #### This project is still work in progress and not useable yet
 
-## Demo
+<!-- ## Demo
 
 ```
 git clone https://github.com/ItsKerolos/react-native-avataaars
 cd react-native-avataaars
 npm install
 npm run web
-```
+``` -->
 
 <!-- ## Usage
 

@@ -1,8 +1,17 @@
-☐ allow all colors and move the colors sets to an export enum
-  - use a default color
+React To NodeJS:
+  ☐ create functions to mix and match svg files
+    - turn existing jsx files to svg template files
 
-☐ port all styles for each component
+  ☐ port all existing functionality to APIs
 
-☐ write a document about available props and available values
+Other:
+  ☐ allow all colors and move the colors sets to an export enum
+    - use a default color
 
-☐ publish the package to the npm registry
+  ☐ port all styles for each component
+
+  ☐ write a document about available props and available values
+
+  ☐ publish the package to the npm registry
+
+  ☐ add a SaaS example that can be deployed to Google Cloud Functions
