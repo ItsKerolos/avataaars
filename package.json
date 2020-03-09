@@ -4,7 +4,6 @@
   "description": "Avataaars as a API",
   "main": "build/index.js",
   "scripts": {
-    "start": "babel -d ./build src -s --watch",
     "build": "rm -rf ./build && mkdir ./build && babel -d ./build ./src",
     "test": "jest",
     "test:coverage": "jest --collect-coverage"
@@ -32,14 +31,20 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@types/jest": "^25.1.4",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.1.0",
+    "babel-plugin-inline-import": "^3.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-security": "^1.4.0",
+    "html-react-parser": "^0.10.1",
     "jest": "^25.1.0",
-    "jest-extended": "^0.11.5"
+    "jest-extended": "^0.11.5",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-html-parser": "^2.0.2"
   }
 }

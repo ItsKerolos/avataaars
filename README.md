@@ -7,7 +7,7 @@ This is a rewrite of Fang-Pen Lin's work but as a API, this allow it to be used 
   - Generating an avatar from your terminal.
   - Use it inside any Web framework.
 
-Being a rewrite we removed, added and renamed stuff so this is not compatible with things like [https://getavataaars.com/](https://getavataaars.com/)
+Being a rewrite we removed, added and renamed stuff so this is not compatible with things like [https://getavataaars.com](https://getavataaars.com)
 
 ## Usage
 

@@ -6,6 +6,9 @@ npm-debug.log
 assets
 avataaars-example.png
 
+*preview.svg
+port.js
+
 src
 coverage
 examples

@@ -1,0 +1,4 @@
+{
+  "jestrunner.jestCommand": "npx jest --no-cache",
+  "svg.preview.background": "transparent"
+}

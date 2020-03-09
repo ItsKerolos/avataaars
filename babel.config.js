@@ -1,5 +1,16 @@
-module.exports = {
-  'presets': [
-    '@babel/preset-env'
-  ]
-};
+module.exports = function(api) {
+  api.cache(false);
+
+  return {
+    'presets': [
+      '@babel/preset-env'
+    ],
+    "plugins": [
+      ["babel-plugin-inline-import", {
+        "extensions": [
+          ".svg"
+        ]
+      }]
+    ]
+  };
+}
