@@ -2,9 +2,9 @@
   <g
     id='Avataaar'
     stroke='none'
-    strokeWidth='1'
+    stroke-width='1'
     fill='none'
-    fillRule='evenodd'>
+    fill-rule='evenodd'>
     <g
       transform='translate(-825.000000, -1100.000000)'
       id='Avataaar/Circle'>
@@ -12,8 +12,8 @@
         <g id='Mask' />
         <g
           id='Avataaar'
-          strokeWidth='1'
-          fillRule='evenodd'
+          stroke-width='1'
+          fill-rule='evenodd'>
           <g id='Body' transform='translate(32.000000, 36.000000)'>
             {{body}}
           </g>
