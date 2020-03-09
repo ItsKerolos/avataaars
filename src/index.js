@@ -25,21 +25,21 @@ import body from './body.js';
 
 /**
 * @typedef { Object } PieceOptions
-* @property { 'default' } [eyebrowsType]
-* @property { 'default' } [eyesType]
+* @property { 'default' | 'raised-excited' } [eyebrowsType]
+* @property { 'default' | 'dizzy' | 'wink' } [eyesType]
 * @property { 'default' } [noseType]
-* @property { 'default' } [mouthType]
+* @property { 'default' | 'eating' | 'smile' } [mouthType]
 
 * @property { 'default' | 'beard-majestic' } [facialHairType]
 * @property { string } [facialHairColor]
 
 * @property { 'default' | 'prescription' } [accessoriesType]
 
-* @property { 'default' | 'graphics' } [clothType]
-* @property { 'default' } [clotheGraphic]
+* @property { 'default' | 'graphics' | 'hoodie' } [clothType]
+* @property { 'default' | 'bear' } [clotheGraphic]
 * @property { string } [clotheColor]
 
-* @property { 'default' } [topType]
+* @property { 'default' | 'long-hair-fro' | 'long-hair-frida' | 'hijab' } [topType]
 * @property { string } [topColor]
 
 * @property { 'default' } [bodyType]

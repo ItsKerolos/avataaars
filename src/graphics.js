@@ -1,5 +1,7 @@
 import Skull from '../assets/clothes/graphics/skull.svg';
 
+import Bear from '../assets/clothes/graphics/bear.svg';
+
 import { template, uniqueId } from './utils.js';
 
 /**
@@ -11,6 +13,9 @@ export default function graphics(pieceOptions)
   * @type { string }
   */
   let svg = Skull;
+
+  if (pieceOptions.clotheGraphic === 'bear')
+    svg = Bear;
 
   svg = template(svg, 'maskID', uniqueId());
 

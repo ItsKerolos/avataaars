@@ -1,5 +1,10 @@
 import LongHairStraight from '../assets/top/long-hair-straight.svg';
 
+import LongHairFro from '../assets/top/long-hair-fro.svg';
+import LongHairFrida from '../assets/top/long-hair-frida.svg';
+
+import Hijab from '../assets/top/hijab.svg';
+
 import { template, uniqueId } from './utils.js';
 
 export const topColors = {
@@ -24,6 +29,13 @@ export default function top(pieceOptions)
   * @type { string }
   */
   let svg = LongHairStraight;
+
+  if (pieceOptions.topType === 'long-hair-fro')
+    svg = LongHairFro;
+  else if (pieceOptions.topType === 'long-hair-frida')
+    svg = LongHairFrida;
+  else if (pieceOptions.topType === 'hijab')
+    svg = Hijab;
 
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());

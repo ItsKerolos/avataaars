@@ -1,5 +1,7 @@
 import ShirtCrewNeck from '../assets/clothes/shirt-crew-neck.svg';
+
 import GraphicsShirt from '../assets/clothes/graphics-shirt.svg';
+import Hoodie from '../assets/clothes/hoodie.svg';
 
 import { template, uniqueId } from './utils.js';
 
@@ -35,6 +37,8 @@ export default function clothes(pieceOptions)
 
   if (pieceOptions.clothType === 'graphics')
     svg = GraphicsShirt;
+  else if (pieceOptions.clothType === 'hoodie')
+    svg = Hoodie;
   
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());

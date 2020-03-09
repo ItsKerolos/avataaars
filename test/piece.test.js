@@ -6,7 +6,7 @@ describe('Testing Piece', () =>
   {
     expect(1).toEqual(1);
 
-    const svg = piece('clothe', { clothType: 'graphics' });
+    const svg = piece('clothe', { clothType: 'hoodie' });
 
     require('fs').writeFileSync('./piece.preview.svg', svg);
   });
