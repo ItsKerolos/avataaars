@@ -1,6 +1,6 @@
 import Default from '../assets/body/default.svg';
 
-import { template } from './utils.js';
+import { template, uniqueId } from './utils.js';
 
 export const skinColors = {
   tanned: '#FD9841',
@@ -14,16 +14,15 @@ export const skinColors = {
 
 /**
 * @param { import('./index').PieceOptions } pieceOptions
-* @param { string } maskID
 */
-export default function body(pieceOptions, maskID)
+export default function body(pieceOptions)
 {
   /**
   * @type { string }
   */
   let svg = Default;
 
-  svg = template(svg, 'maskID', maskID);
+  svg = template(svg, 'maskID', uniqueId());
   svg = template(svg, 'color', pieceOptions.skinColor || skinColors.light);
 
   return svg;

@@ -4,16 +4,15 @@ import { template, uniqueId } from './utils.js';
 
 /**
 * @param { import('./index').PieceOptions } pieceOptions
-* @param { string } maskID
 */
-export default function graphics(pieceOptions, maskID)
+export default function graphics(pieceOptions)
 {
   /**
   * @type { string }
   */
   let svg = Skull;
 
-  svg = template(svg, 'maskID', maskID);
+  svg = template(svg, 'maskID', uniqueId());
 
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());

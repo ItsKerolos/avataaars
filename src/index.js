@@ -1,4 +1,5 @@
 import Piece from '../assets/piece.svg';
+import Avatar from '../assets/avatar.svg';
 
 import { template } from './utils.js';
 
@@ -34,7 +35,7 @@ import body from './body.js';
 
 * @property { 'default' | 'prescription' } [accessoriesType]
 
-* @property { 'default' } [clothType]
+* @property { 'default' | 'graphics' } [clothType]
 * @property { 'default' } [clotheGraphic]
 * @property { string } [clotheColor]
 
@@ -69,41 +70,74 @@ export function piece(pieceType, pieceOptions, options)
   */
   let svg = Piece;
 
-  svg = template(svg, 'pieceSize', options.size || '128');
+  svg = template(svg, 'size', options.size || '128');
   svg = template(svg, 'viewBox', options.viewBox || '0 0 264 280');
 
   if (pieceType === 'eyebrows')
-    svg = template(svg, 'children', eyebrows(pieceOptions));
+    svg = template(svg, 'piece', eyebrows(pieceOptions));
 
   else if (pieceType === 'eyes')
-    svg = template(svg, 'children', eyes(pieceOptions));
+    svg = template(svg, 'piece', eyes(pieceOptions));
 
   else if (pieceType === 'nose')
-    svg = template(svg, 'children', nose(pieceOptions));
+    svg = template(svg, 'piece', nose(pieceOptions));
     
   else if (pieceType === 'mouth')
-    svg = template(svg, 'children', mouth(pieceOptions));
+    svg = template(svg, 'piece', mouth(pieceOptions));
 
   else if (pieceType === 'facial-hair')
-    svg = template(svg, 'children', facialHair(pieceOptions));
+    svg = template(svg, 'piece', facialHair(pieceOptions));
 
   else if (pieceType === 'accessories')
-    svg = template(svg, 'children', accessories(pieceOptions));
+    svg = template(svg, 'piece', accessories(pieceOptions));
 
   else if (pieceType === 'graphics')
-    svg = template(svg, 'children', graphics(pieceOptions, '5678'));
+    svg = template(svg, 'piece', graphics(pieceOptions));
       
   else if (pieceType === 'clothe')
-    svg = template(svg, 'children', clothes(pieceOptions));
+    svg = template(svg, 'piece', clothes(pieceOptions));
 
   else if (pieceType === 'top')
-    svg = template(svg, 'children', top(pieceOptions));
+    svg = template(svg, 'piece', top(pieceOptions));
 
   else if (pieceType === 'body')
-    svg = template(svg, 'children', body(pieceOptions, '1234'));
+    svg = template(svg, 'piece', body(pieceOptions));
     
   else
     throw new Error('Piece Type Is Invalid');
+
+  return svg;
+}
+
+/**
+* @param { PieceOptions } avatarOptions
+* @param { Options } options
+*/
+export default function avatar(avatarOptions, options)
+{
+  avatarOptions = avatarOptions || {};
+  options = options || {};
+
+  /**
+  * @type { string }
+  */
+  let svg = Avatar;
+
+  svg = template(svg, 'size', options.size || '264');
+  svg = template(svg, 'viewBox', options.viewBox || '0 0 264 280');
+
+  svg = template(svg, 'body', body(avatarOptions));
+
+  svg = template(svg, 'clothe', clothes(avatarOptions));
+
+  svg = template(svg, 'eyebrows', eyebrows(avatarOptions));
+  svg = template(svg, 'eyes', eyes(avatarOptions));
+  svg = template(svg, 'nose', nose(avatarOptions));
+  svg = template(svg, 'mouth', mouth(avatarOptions));
+
+  svg = template(svg, 'top', top(avatarOptions));
+  svg = template(svg, 'facial-hair', facialHair(avatarOptions));
+  svg = template(svg, 'accessories', accessories(avatarOptions));
 
   return svg;
 }

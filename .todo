@@ -1,10 +1,4 @@
-React To NodeJS:
-  ☐ port all existing functionality to APIs
-
 Other:
-  ☐ allow all colors and move the colors sets to an export enum
-    - use a default color
-
   ☐ port all styles for each component
 
   ☐ write a document about available props and available values

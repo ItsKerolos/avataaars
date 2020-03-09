@@ -1,6 +1,9 @@
 import ShirtCrewNeck from '../assets/clothes/shirt-crew-neck.svg';
+import GraphicsShirt from '../assets/clothes/graphics-shirt.svg';
 
 import { template, uniqueId } from './utils.js';
+
+import graphics from './graphics.js';
 
 export const clotheColors = {
   black: '#262E33',
@@ -30,9 +33,14 @@ export default function clothes(pieceOptions)
   */
   let svg = ShirtCrewNeck;
 
+  if (pieceOptions.clothType === 'graphics')
+    svg = GraphicsShirt;
+  
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());
   svg = template(svg, 'filter', uniqueId());
+
+  svg = template(svg, 'graphics', graphics(pieceOptions));
 
   svg = template(svg, 'color', pieceOptions.clotheColor || clotheColors.pastelRed);
 

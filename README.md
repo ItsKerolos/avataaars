@@ -5,7 +5,7 @@ Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangp
 This is a rewrite of Fang-Pen Lin's work but as a API, this allow it to be used for things like: 
   - Serverless function.
   - Generating an avatar from your terminal.
-  - Use it inside any Web framework.
+  - Use it inside any web framework.
 
 Being a rewrite we removed, added and renamed stuff so this is not compatible with things like [https://getavataaars.com](https://getavataaars.com)
 
