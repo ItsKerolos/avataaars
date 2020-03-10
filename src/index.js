@@ -31,7 +31,11 @@ import body from './body.js';
 
 /**
 * @typedef { Object } PieceOptions
-* @property { 'default' | 'raised-excited' } [eyebrowsType]
+
+* @property { 'default' | 'angry' | 'angry-natural' | 'default-natural' |
+  'flat-natural' | 'frown-natural' | 'raised-excited' | 'raised-excited-natural' |
+  'sad-concerned' | 'sad-concerned-natural' | 'unibrow-natural' |
+  'up-down' | 'up-down-natural' } [eyebrowsType]
 
 * @property { 'default' | 'close' | 'cry' | 'dizzy' |
   'eye-roll' | 'happy' | 'hearts' | 'side' | 'squint' |
@@ -45,6 +49,7 @@ import body from './body.js';
   'tongue' | 'twinkle' | 'vomit' } [mouthType]
 
 * @property { 'default' | 'beard-majestic' } [facialHairType]
+
 * @property { string } [facialHairColor]
 
 * @property { 'default' | 'prescription' } [accessoriesType]
