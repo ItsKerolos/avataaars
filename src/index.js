@@ -67,7 +67,11 @@ import body from './body.js';
 * @property { string } [clotheColor]
 
 * @property {
-  'default' | 'long-hair-fro' | 'long-hair-frida' |
+  'default' | 'long-hair-big-hair' | 'long-hair-bob' | 'long-hair-bun' |
+  'long-hair-curly' | 'long-hair-curvy' | 'long-hair-dreads' | 'long-hair-frida' |
+  'long-hair-fro-band' | 'long-hair-fro' | 'long-hair-mia-wallace' |
+  'long-hair-not-too-long' | 'long-hair-shaved-sides' | 'long-hair-straight-2' |
+  'long-hair-straight-strand' |
   'hijab' } [topType]
 
 * @property { string } [topColor]
