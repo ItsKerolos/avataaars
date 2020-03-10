@@ -72,7 +72,11 @@ import body from './body.js';
   'long-hair-curly' | 'long-hair-curvy' | 'long-hair-dreads' | 'long-hair-frida' |
   'long-hair-fro-band' | 'long-hair-fro' | 'long-hair-mia-wallace' |
   'long-hair-not-too-long' | 'long-hair-shaved-sides' | 'long-hair-straight-2' |
-  'long-hair-straight-strand' | 'no-hair' | 'turban' |
+  'long-hair-straight-strand' | 'no-hair' | 'short-hair-dreads' | 'short-hair-dreads-2' |
+  'short-hair-frizzle' | 'short-hair-shaggy' | 'short-hair-shaggy-mullet' |
+  'short-hair-short-curly' | 'short-hair-short-flat' | 'short-hair-short-round' |
+  'short-hair-short-waved' | 'short-hair-sides' | 'short-hair-the-caesar' |
+  'short-hair-the-caesar-side-part' | 'turban' |
   'winter-hat' | 'winter-hat-2' | 'winter-hat-3' | 'winter-hat-4' } [topType]
 
 * @property { string } [topColor]

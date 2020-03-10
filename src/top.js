@@ -24,6 +24,23 @@ import longHairStraight2 from '../assets/top/long-hair-straight-2.svg';
 import longHairStraightStrand from '../assets/top/long-hair-straight-strand.svg';
 
 import noHair from '../assets/top/no-hair.svg';
+
+import shortHairDreads from '../assets/top/short-hair-dreads.svg';
+import shortHairDreads2 from '../assets/top/short-hair-dreads-2.svg';
+
+import shortHairFrizzle from '../assets/top/short-hair-frizzle.svg';
+import shortHairShaggy from '../assets/top/short-hair-shaggy.svg';
+import shortHairShaggyMullet from '../assets/top/short-hair-shaggy-mullet.svg';
+
+import shortHairShortCurly from '../assets/top/short-hair-short-curly.svg';
+import shortHairShortFlat from '../assets/top/short-hair-short-flat.svg';
+import shortHairShortRound from '../assets/top/short-hair-short-round.svg';
+import shortHairShortWaved from '../assets/top/short-hair-short-waved.svg';
+
+import shortHairSides from '../assets/top/short-hair-sides.svg';
+import shortHairTheCaesar from '../assets/top/short-hair-the-caesar.svg';
+import shortHairTheCaesarSidePart from '../assets/top/short-hair-the-caesar-side-part.svg';
+
 import turban from '../assets/top/turban.svg';
 
 import winterHat from '../assets/top/winter-hat.svg';
@@ -57,6 +74,23 @@ const directory = {
   'long-hair-straight-strand': longHairStraightStrand,
 
   'no-hair': noHair,
+
+  'short-hair-dreads': shortHairDreads,
+  'short-hair-dreads-2': shortHairDreads2,
+
+  'short-hair-frizzle': shortHairFrizzle,
+  'short-hair-shaggy': shortHairShaggy,
+  'short-hair-shaggy-mullet': shortHairShaggyMullet,
+  
+  'short-hair-short-curly': shortHairShortCurly,
+  'short-hair-short-flat': shortHairShortFlat,
+  'short-hair-short-round': shortHairShortRound,
+  'short-hair-short-waved': shortHairShortWaved,
+
+  'short-hair-sides': shortHairSides,
+  'short-hair-the-caesar': shortHairTheCaesar,
+  'short-hair-the-caesar-side-part': shortHairTheCaesarSidePart,
+
   turban,
 
   'winter-hat': winterHat,
