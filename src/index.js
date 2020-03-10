@@ -48,7 +48,9 @@ import body from './body.js';
   'scream-open' | 'serious' | 'smile' |
   'tongue' | 'twinkle' | 'vomit' } [mouthType]
 
-* @property { 'default' | 'beard-majestic' } [facialHairType]
+* @property { 'default' | 'beard-light' | 'beard-majestic' |
+  'beard-medium' | 'moustache-fancy' | 'moustache-magnum'
+  } [facialHairType]
 
 * @property { string } [facialHairColor]
 

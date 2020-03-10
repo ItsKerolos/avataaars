@@ -1,9 +1,18 @@
+import beardLight from '../assets/top/facial-hair/beard-light.svg';
 import beardMajestic from '../assets/top/facial-hair/beard-majestic.svg';
+import beardMedium from '../assets/top/facial-hair/beard-medium.svg';
+
+import moustacheFancy from '../assets/top/facial-hair/moustache-fancy.svg';
+import moustacheMagnum from '../assets/top/facial-hair/moustache-magnum.svg';
 
 import { template, uniqueId } from './utils.js';
 
 const directory = {
-  'beard-majestic': beardMajestic
+  'beard-light': beardLight,
+  'beard-majestic': beardMajestic,
+  'beard-medium': beardMedium,
+  'moustache-fancy': moustacheFancy,
+  'moustache-magnum': moustacheMagnum
 };
 
 export const facialHairColors = {
