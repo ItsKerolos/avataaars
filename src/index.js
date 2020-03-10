@@ -42,7 +42,7 @@ import body from './body.js';
 * @property { 'default' | 'prescription' } [accessoriesType]
 
 * @property { 'default' | 'graphics' | 'hoodie' | 'blazer-shirt' | 'blazer-sweater' | 'collar-sweater' | 'overall' | 'shirt-scoop-neck' | 'shirt-v-neck' } [clothType]
-* @property { 'default' | 'bear' } [clotheGraphic]
+* @property { 'default' | 'bat' | 'bear' | 'cumbia' | 'deer' | 'diamond' | 'hola' | 'pizza' | 'resist' | 'selena' | 'skull-outline' } [clotheGraphic]
 * @property { string } [clotheColor]
 
 * @property { 'default' | 'long-hair-fro' | 'long-hair-frida' | 'hijab' } [topType]
