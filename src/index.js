@@ -51,10 +51,10 @@ import body from './body.js';
 * @property { 'default' | 'beard-light' | 'beard-majestic' |
   'beard-medium' | 'moustache-fancy' | 'moustache-magnum'
   } [facialHairType]
-
 * @property { string } [facialHairColor]
 
-* @property { 'default' | 'prescription' } [accessoriesType]
+* @property { 'default' | 'kurt' | 'prescription' | 'prescription-2' |
+  'round' | 'sunglasses' | 'wayfarers' } [accessoriesType]
 
 * @property { 'default' | 'graphics' | 'hoodie' |
   'blazer-shirt' | 'blazer-sweater' | 'collar-sweater' |
