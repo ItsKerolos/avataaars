@@ -1,6 +1,10 @@
 import Default from '../assets/face/eyebrows/default.svg';
 
-import RaisedExcited from '../assets/face/eyebrows/raised-excited.svg';
+import raisedExcited from '../assets/face/eyebrows/raised-excited.svg';
+
+const directory = {
+  'raised-excited': raisedExcited
+};
 
 /**
 * @param { import('./index').PieceOptions } pieceOptions
@@ -10,10 +14,7 @@ export default function eyebrows(pieceOptions)
   /**
   * @type { string }
   */
-  let svg = Default;
-
-  if (pieceOptions.eyebrowsType === 'raised-excited')
-    svg = RaisedExcited;
+  const svg = directory[pieceOptions.eyebrowsType] || Default;
 
   return svg;
 }

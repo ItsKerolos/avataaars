@@ -1,6 +1,10 @@
-import BeardMajestic from '../assets/top/facial-hair/beard-majestic.svg';
+import beardMajestic from '../assets/top/facial-hair/beard-majestic.svg';
 
 import { template, uniqueId } from './utils.js';
+
+const directory = {
+  'beard-majestic': beardMajestic
+};
 
 export const facialHairColors = {
   auburn: '#A55728',
@@ -21,10 +25,7 @@ export default function facialHair(pieceOptions)
   /**
   * @type { string }
   */
-  let svg = '';
-
-  if (pieceOptions.facialHairType === 'beard-majestic')
-    svg = BeardMajestic;
+  let svg = directory[pieceOptions.facialHairType] || '';
 
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());

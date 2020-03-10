@@ -34,18 +34,31 @@ import body from './body.js';
 * @property { 'default' | 'raised-excited' } [eyebrowsType]
 * @property { 'default' | 'dizzy' | 'wink' } [eyesType]
 * @property { 'default' } [noseType]
-* @property { 'default' | 'eating' | 'smile' } [mouthType]
+
+* @property { 'default' | 'concerned' | 'disbelief' |
+  'eating' | 'grimace' | 'sad' |
+  'scream-open' | 'serious' | 'smile' |
+  'tongue' | 'twinkle' | 'vomit' } [mouthType]
 
 * @property { 'default' | 'beard-majestic' } [facialHairType]
 * @property { string } [facialHairColor]
 
 * @property { 'default' | 'prescription' } [accessoriesType]
 
-* @property { 'default' | 'graphics' | 'hoodie' | 'blazer-shirt' | 'blazer-sweater' | 'collar-sweater' | 'overall' | 'shirt-scoop-neck' | 'shirt-v-neck' } [clothType]
-* @property { 'default' | 'bat' | 'bear' | 'cumbia' | 'deer' | 'diamond' | 'hola' | 'pizza' | 'resist' | 'selena' | 'skull-outline' } [clotheGraphic]
+* @property { 'default' | 'graphics' | 'hoodie' |
+  'blazer-shirt' | 'blazer-sweater' | 'collar-sweater' |
+  'overall' | 'shirt-scoop-neck' | 'shirt-v-neck' } [clothType]
+
+* @property { 'default' | 'bat' | 'bear' |
+  'cumbia' | 'deer' | 'diamond' | 'hola' |
+  'pizza' | 'resist' | 'selena' | 'skull-outline' } [clotheGraphic]
+
 * @property { string } [clotheColor]
 
-* @property { 'default' | 'long-hair-fro' | 'long-hair-frida' | 'hijab' } [topType]
+* @property {
+  'default' | 'long-hair-fro' | 'long-hair-frida' |
+  'hijab' } [topType]
+
 * @property { string } [topColor]
 
 * @property { 'default' } [bodyType]

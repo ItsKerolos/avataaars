@@ -1,14 +1,20 @@
 /* eslint-disable security/detect-non-literal-fs-filename */
 
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, unlinkSync } from 'fs';
+import { join, dirname, basename } from 'path';
 
 /** internal code to help transform react syntax to xml
 * @param { string } svg
+* @param { boolean } full
 */
-function port(svg)
+function port(svg, full)
 {
   const parse = require('html-react-parser');
   const ReactDOMServer = require('react-dom/server');
+
+  // match everything between the first and last occurrence of (<) and (>)
+  if (full)
+    svg = svg.match(/<.*>/s)[0];
 
   // replaces <example/> with <example></example>
   svg = svg.replace(/(<)((\s|\S)+?)(>)/g, (match, _0, _1, _2) =>
@@ -64,10 +70,35 @@ function port(svg)
   return svg;
 }
 
+function decamelize(str)
+{
+  return str
+    .replace(/([a-z])([A-Z])/g, '$1-$2')
+    .toLowerCase();
+}
+
 const path = process.argv[2];
 
 const input = readFileSync(path).toString();
 
-const output = port(input);
+const output = port(input, path.endsWith('.tsx'));
 
-writeFileSync(path, output);
+if (!path.endsWith('.tsx'))
+{
+  writeFileSync(path, output);
+}
+else
+{
+  const name = decamelize(basename(path)).replace('.tsx', '');
+  const newPath = join(dirname(path), `${name}.svg`);
+  
+  // eslint-disable-next-line no-console
+  console.log(name);
+  
+  // write new file
+  writeFileSync(newPath, output);
+  
+  // delete old .tsx file
+  unlinkSync(path);
+}
+  

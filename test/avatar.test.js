@@ -6,7 +6,9 @@ describe('Testing Avatar', () =>
   {
     expect(1).toEqual(1);
 
-    const svg = avatar();
+    const svg = avatar({
+      mouthType: 'twinkle'
+    });
 
     require('fs').writeFileSync('./avatar.preview.svg', svg);
   });

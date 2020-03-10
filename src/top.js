@@ -1,11 +1,17 @@
-import LongHairStraight from '../assets/top/long-hair-straight.svg';
+import longHairStraight from '../assets/top/long-hair-straight.svg';
 
-import LongHairFro from '../assets/top/long-hair-fro.svg';
-import LongHairFrida from '../assets/top/long-hair-frida.svg';
+import longHairFro from '../assets/top/long-hair-fro.svg';
+import longHairFrida from '../assets/top/long-hair-frida.svg';
 
-import Hijab from '../assets/top/hijab.svg';
+import hijab from '../assets/top/hijab.svg';
 
 import { template, uniqueId } from './utils.js';
+
+const directory = {
+  'long-hair-fro': longHairFro,
+  'long-hair-frida': longHairFrida,
+  hijab
+};
 
 export const topColors = {
   auburn: '#A55728',
@@ -28,14 +34,7 @@ export default function top(pieceOptions)
   /**
   * @type { string }
   */
-  let svg = LongHairStraight;
-
-  if (pieceOptions.topType === 'long-hair-fro')
-    svg = LongHairFro;
-  else if (pieceOptions.topType === 'long-hair-frida')
-    svg = LongHairFrida;
-  else if (pieceOptions.topType === 'hijab')
-    svg = Hijab;
+  let svg = directory[pieceOptions.topType] || longHairStraight;
 
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());
