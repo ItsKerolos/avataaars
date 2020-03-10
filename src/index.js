@@ -32,7 +32,11 @@ import body from './body.js';
 /**
 * @typedef { Object } PieceOptions
 * @property { 'default' | 'raised-excited' } [eyebrowsType]
-* @property { 'default' | 'dizzy' | 'wink' } [eyesType]
+
+* @property { 'default' | 'close' | 'cry' | 'dizzy' |
+  'eye-roll' | 'happy' | 'hearts' | 'side' | 'squint' |
+  'surprised' | 'wink' | 'wink-wacky' } [eyesType]
+
 * @property { 'default' } [noseType]
 
 * @property { 'default' | 'concerned' | 'disbelief' |

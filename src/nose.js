@@ -1,7 +1,8 @@
 import Default from '../assets/face/nose/default.svg';
 
-const directory = {};
+import { template, uniqueId } from './utils.js';
 
+const directory = {};
 
 /**
 * @param { import('./index').PieceOptions } pieceOptions
@@ -11,7 +12,11 @@ export default function nose(pieceOptions)
   /**
   * @type { string }
   */
-  const svg = directory[pieceOptions.noseType] || Default;
+  let svg = directory[pieceOptions.noseType] || Default;
+
+  svg = template(svg, 'path', uniqueId());
+  svg = template(svg, 'mask', uniqueId());
+  svg = template(svg, 'filter', uniqueId());
 
   return svg;
 }
