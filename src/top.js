@@ -1,5 +1,9 @@
 import longHairStraight from '../assets/top/long-hair-straight.svg';
 
+import eyepatch from '../assets/top/eyepatch.svg';
+import hat from '../assets/top/hat.svg';
+import hijab from '../assets/top/hijab.svg';
+
 import longHairBigHair from '../assets/top/long-hair-big-hair.svg';
 import longHairBob from '../assets/top/long-hair-bob.svg';
 import longHairBun from '../assets/top/long-hair-bun.svg';
@@ -19,11 +23,21 @@ import longHairShavedSides from '../assets/top/long-hair-shaved-sides.svg';
 import longHairStraight2 from '../assets/top/long-hair-straight-2.svg';
 import longHairStraightStrand from '../assets/top/long-hair-straight-strand.svg';
 
-import hijab from '../assets/top/hijab.svg';
+import noHair from '../assets/top/no-hair.svg';
+import turban from '../assets/top/turban.svg';
+
+import winterHat from '../assets/top/winter-hat.svg';
+import winterHat2 from '../assets/top/winter-hat-2.svg';
+import winterHat3 from '../assets/top/winter-hat-3.svg';
+import winterHat4 from '../assets/top/winter-hat-4.svg';
 
 import { template, uniqueId } from './utils.js';
 
 const directory = {
+  eyepatch,
+  hat,
+  hijab,
+
   'long-hair-big-hair': longHairBigHair,
   'long-hair-bob': longHairBob,
   'long-hair-bun': longHairBun,
@@ -41,8 +55,14 @@ const directory = {
   'long-hair-shaved-sides': longHairShavedSides,
   'long-hair-straight-2': longHairStraight2,
   'long-hair-straight-strand': longHairStraightStrand,
-  
-  hijab
+
+  'no-hair': noHair,
+  turban,
+
+  'winter-hat': winterHat,
+  'winter-hat-2': winterHat2,
+  'winter-hat-3': winterHat3,
+  'winter-hat-4': winterHat4
 };
 
 export const topColors = {
