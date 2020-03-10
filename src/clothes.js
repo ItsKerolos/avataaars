@@ -1,11 +1,30 @@
 import ShirtCrewNeck from '../assets/clothes/shirt-crew-neck.svg';
+import ShirtScoopNeck from '../assets/clothes/shirt-scoop-neck.svg';
+import ShirtVNeck from '../assets/clothes/shirt-v-neck.svg';
 
 import GraphicsShirt from '../assets/clothes/graphics-shirt.svg';
 import Hoodie from '../assets/clothes/hoodie.svg';
 
+import BlazerShirt from '../assets/clothes/blazer-shirt.svg';
+import BlazerSweater from '../assets/clothes/blazer-sweater.svg';
+import CollarSweater from '../assets/clothes/collar-sweater.svg';
+
+import Overall from '../assets/clothes/overall.svg';
+
 import { template, uniqueId } from './utils.js';
 
 import graphics from './graphics.js';
+
+const directory = {
+  'graphics': GraphicsShirt,
+  'hoodie': Hoodie,
+  'blazer-shirt': BlazerShirt,
+  'blazer-sweater': BlazerSweater,
+  'collar-sweater': CollarSweater,
+  'overall': Overall,
+  'shirt-scoop-neck': ShirtScoopNeck,
+  'shirt-v-neck': ShirtVNeck
+};
 
 export const clotheColors = {
   black: '#262E33',
@@ -33,13 +52,8 @@ export default function clothes(pieceOptions)
   /**
   * @type { string }
   */
-  let svg = ShirtCrewNeck;
+  let svg = directory[pieceOptions.clothType] || ShirtCrewNeck;
 
-  if (pieceOptions.clothType === 'graphics')
-    svg = GraphicsShirt;
-  else if (pieceOptions.clothType === 'hoodie')
-    svg = Hoodie;
-  
   svg = template(svg, 'path', uniqueId());
   svg = template(svg, 'mask', uniqueId());
   svg = template(svg, 'filter', uniqueId());

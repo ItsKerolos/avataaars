@@ -24,6 +24,12 @@ import body from './body.js';
 */
 
 /**
+* @typedef { Object } Options
+* @property { string } [size]
+* @property { string } [viewBox]
+*/
+
+/**
 * @typedef { Object } PieceOptions
 * @property { 'default' | 'raised-excited' } [eyebrowsType]
 * @property { 'default' | 'dizzy' | 'wink' } [eyesType]
@@ -35,7 +41,7 @@ import body from './body.js';
 
 * @property { 'default' | 'prescription' } [accessoriesType]
 
-* @property { 'default' | 'graphics' | 'hoodie' } [clothType]
+* @property { 'default' | 'graphics' | 'hoodie' | 'blazer-shirt' | 'blazer-sweater' | 'collar-sweater' | 'overall' | 'shirt-scoop-neck' | 'shirt-v-neck' } [clothType]
 * @property { 'default' | 'bear' } [clotheGraphic]
 * @property { string } [clotheColor]
 
@@ -44,12 +50,6 @@ import body from './body.js';
 
 * @property { 'default' } [bodyType]
 * @property { string } [skinColor]
-*/
-
-/**
-* @typedef { Object } Options
-* @property { string } [size]
-* @property { string } [viewBox]
 */
 
 /**
