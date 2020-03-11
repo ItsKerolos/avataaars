@@ -4,6 +4,7 @@
   "description": "Avataaars as a API",
   "main": "build/index.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "rm -rf ./build && mkdir ./build && babel -d ./build ./src",
     "test": "jest",
     "test:coverage": "jest --collect-coverage"

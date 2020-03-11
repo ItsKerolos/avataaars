@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "avatars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gcloud functions deploy avatars --entry-point main --project projectid --runtime nodejs10 --trigger-http --allow-unauthenticated"
+  },
+  "dependencies": {
+    "re-avataaars": "^0.1.0",
+    "svg2img": "^0.6.1"
+  }
+}

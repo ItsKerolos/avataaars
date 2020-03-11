@@ -1,14 +1,19 @@
 .git
+.vscode
 .npmrc
+.todo
+.eslint*
 
 npm-debug.log
 
 assets
 avataaars-example.png
-
 *preview.svg
+
 port.js
+babel.config.js
 
 src
+test
 coverage
 examples

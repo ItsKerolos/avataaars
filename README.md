@@ -4,6 +4,7 @@ Original React library was developed by [Fang-Pen Lin](https://twitter.com/fangp
 
 This is a rewrite of Fang-Pen Lin's work but as a API, this allow it to be used for things like: 
   - Serverless function.
+  - [Serverless function](/examples/gcloud-functions)
   - Generating an avatar from your terminal.
   - Use it inside any web framework.
 
