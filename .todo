@@ -9,11 +9,8 @@ Testing:
 API:
   
 Assets:
-  ☐ port all the assets for each component
   
 Docs:
-  ☐ write the initial API document
-
   ☐ add a Google Cloud Functions example
   ☐ add a CLI example
   ☐ add a React example

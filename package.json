@@ -1,5 +1,5 @@
 {
-  "name": "avataaars",
+  "name": "re-avataaars",
   "version": "0.1.0",
   "description": "Avataaars as a API",
   "main": "build/index.js",
@@ -44,7 +44,6 @@
     "jest": "^25.1.0",
     "jest-extended": "^0.11.5",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-html-parser": "^2.0.2"
+    "react-dom": "^16.13.0"
   }
 }

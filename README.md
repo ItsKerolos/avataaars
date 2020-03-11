@@ -11,71 +11,37 @@ Being a rewrite we removed, added and renamed stuff so this is not compatible wi
 
 ## Usage
 
-#### This project is still work in progress and not useable yet
-
-<!-- ## Demo
-
 ```
-git clone https://github.com/ItsKerolos/react-native-avataaars
-cd react-native-avataaars
-npm install
-npm run web
-``` -->
-
-<!-- ## Usage
-
-```
-npm install react-native-avatars --save
+npm install re-avataaars --save
 ```
 
-<!-- ```jsx
-import * as React from 'react'
-import Avatar from 'avataaars'
+```js
+import avatar, { clotheColors } from 're-avataaars'
 
-export default class MyComponent extends React.Component {
-  render () {
-    return 
-      <div>
-        Your avatar:
-        <Avatar
-          style={{width: '100px', height: '100px'}}
-          avatarStyle='Circle'
-          topType='LongHairMiaWallace'
-          accessoriesType='Prescription02'
-          hairColor='BrownDark'
-          facialHairType='Blank'
-          clotheType='Hoodie'
-          clotheColor='PastelBlue'
-          eyeType='Happy'
-          eyebrowType='Default'
-          mouthType='Smile'
-          skinColor='Light'
-        />
-      </div>
-  }
-}
+// this outputs a svg xml string
+const svg = avatar({
+  topType: 'long-hair-curly',
+  clothType: 'shirt-v-neck',
+  clotheColor: clotheColors.pastelOrange
+});
+
+// you can add it directly to DOM (browser)
+document.getElementById('foo').innerHTML = svg;
+
+// save it to a file (nodejs)
+require('fs').writeFileSync('avatar.svg', svg);
 ```
 
-To showcase individual pieces of the avatar you can use the Piece component, for example:
+You can use the piece function to show individual pieces of an avatar.
 
-```jsx
-import * as React from 'react'
-import {Piece} from 'avataaars';
+```js
+import { piece, clotheColors } from 're-avataaars'
 
-export default class MyComponent extends React.Component {
-  render () {
-    return 
-      <div>
-        <Piece pieceType="mouth" pieceSize="100" mouthType="Eating"/>
-        <Piece pieceType="eyes" pieceSize="100" eyeType="Dizzy"/>
-        <Piece pieceType="eyebrows" pieceSize="100" eyebrowType="RaisedExcited"/>
-        <Piece pieceType="accessories" pieceSize="100" accessoriesType="Round"/>
-        <Piece pieceType="top" pieceSize="100" topType="LongHairFro" hairColor="Red"/>
-        <Piece pieceType="facialHair" pieceSize="100" facialHairType="BeardMajestic"/>
-        <Piece pieceType="clothe" pieceSize="100" clotheType="Hoodie" clotheColor="Red"/>
-        <Piece pieceType="graphics" pieceSize="100" graphicType="Skull" />
-        <Piece pieceType="skin" pieceSize="100" skinColor="Brown" />
-      </div>
-  }
-}
+const svg = piece('clothe', {
+  clothType: 'graphics',
+  clotheColor: '#000000',
+  clotheGraphic: 'pizza'
+}, { size: '268' });
 ```
+
+Check the examples folder if you want to see more ways to use this module.

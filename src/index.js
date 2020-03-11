@@ -8,14 +8,14 @@ import eyes from './eyes.js';
 import nose from './nose.js';
 import mouth from './mouth.js';
 
-import facialHair from './facialHair.js';
+import facialHair, { facialHairColors } from './facialHair.js';
 import accessories from './accessories.js';
 
 import graphics from './graphics.js';
-import clothes from './clothes.js';
+import clothes, { clotheColors } from './clothes.js';
 
-import top from './top.js';
-import body from './body.js';
+import top, { topColors } from './top.js';
+import body, { skinColors } from './body.js';
 
 /**
 * @typedef { 'body' | 'top' | 'clothe' | 'graphics' |
@@ -174,3 +174,10 @@ export default function avatar(avatarOptions, options)
 
   return svg;
 }
+
+export {
+  facialHairColors,
+  clotheColors,
+  topColors,
+  skinColors
+};
