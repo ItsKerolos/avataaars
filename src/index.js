@@ -87,7 +87,7 @@ import body, { skinColors } from './body.js';
 
 /**
 * @typedef { Object } AvatarOptions
-* @property { string } backgroundColor
+* @property { string } [backgroundColor]
 */
 
 /**
