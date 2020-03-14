@@ -86,6 +86,11 @@ import body, { skinColors } from './body.js';
 */
 
 /**
+* @typedef { Object } AvatarOptions
+* @property { string } backgroundColor
+*/
+
+/**
 * @param { PieceType } pieceType
 * @param { PieceOptions } pieceOptions
 * @param { Options } options
@@ -143,7 +148,7 @@ export function piece(pieceType, pieceOptions, options)
 }
 
 /**
-* @param { PieceOptions } avatarOptions
+* @param { PieceOptions & AvatarOptions } avatarOptions
 * @param { Options } options
 */
 export default function avatar(avatarOptions, options)
@@ -155,6 +160,8 @@ export default function avatar(avatarOptions, options)
   * @type { string }
   */
   let svg = Avatar;
+
+  svg = template(svg, 'backgroundColor', avatarOptions.backgroundColor || '#00000000');
 
   svg = template(svg, 'size', options.size || '264');
   svg = template(svg, 'viewBox', options.viewBox || '0 0 264 280');

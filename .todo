@@ -1,5 +1,4 @@
 Issues:
-  ☐ publish the package to the npm registry
 
 Testing:
   ☐ write piece tests
@@ -11,6 +10,5 @@ API:
 Assets:
   
 Docs:
-  ☐ add a Google Cloud Functions example
   ☐ add a CLI example
   ☐ add a React example
